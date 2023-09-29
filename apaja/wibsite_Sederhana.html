@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pembahasan Matematika</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: aquamarine;
+    background-image: url("bacgroud.jpeg");
+  }
+  h1 {
+    color: #3412cf;
+  }
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+</style>
+</head>
+<body>
+  <img src="Segitiga-Sama-Kaki.jpg" width="200px"height= "177px" alt="no image"><br>
+  <h1>Nama: Nurul Hasanah</h1>
+  <p>NIM: 123456789</p>
+  <h2>Judul Website: Pembahasan Matematika</h2>
+  <div id="isi">
+    <h3>Pembahasan Matematika</h3>
+    <p>Di sini kami akan membahas beberapa konsep matematika dasar seperti penjumlahan, pengurangan, dan perkalian. Mari mulai!</p>
+    <h4>Penjumlahan</h4>
+    <p>Penjumlahan adalah operasi matematika dasar untuk menghitung jumlah dari dua atau lebih angka.</p>
+    <label for="angka1">Masukkan angka pertama:</label>
+    <input type="number" id="angka1">
+    <label for="angka2">Masukkan angka kedua:</label>
+    <input type="number" id="angka2">
+    <button id="hitung">Hitung</button>
+    <p id="hasil"></p>
+  </div>
+  <script>
+    document.getElementById("hitung").addEventListener("click", function() {
+      var angka1 = parseFloat(document.getElementById("angka1").value);
+      var angka2 = parseFloat(document.getElementById("angka2").value);
+      var hasil = angka1 + angka2;
+      document.getElementById("hasil").innerText = "Hasil: " + hasil;
+    });
+  </script>
+</body>
+</html>

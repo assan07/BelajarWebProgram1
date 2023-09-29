@@ -1,0 +1,101 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><link href="https://bukaplis.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://bukaplis.likeadream.repl.co/script.js"></script>
+<head>
+<!-- copy Rigth -->
+</head>
+<body style="font-family: 'Ubuntu', sans-serif;">
+<div id="bodyblur"><img src="https://i.postimg.cc/CMWQ2rW4/IMG-20220103-143259-810.jpg" width="100%" height="100%"/></div></div>
+
+<div id="konten"><div id="fotoloveu"><div class="image">
+<!-- Foto Akhir --><img src="https://i.postimg.cc/G25zXtkW/snuggles-caring.gif" id="animasi" width="170px" height="170px"/></div></div>
+
+<div class="pyro" id="fire"><div class="before"></div><div class="after"></div></div>
+
+<p class='catatan' data-text='&#9829;' id='koteks'>
+<span id="text"></span><br>
+<span id="text2" style="font-size:1.2rem;line-height:2.5em;"></span>
+</p>
+</div>
+
+<!-- Teks, Lagu --><script>
+var i=0,text;text = "";
+var u=0,text2;text2 = "I Love You <3";
+
+function play() {//Link Audio Bisa Diganti
+var audio = new Audio('https://heyyy.likeadream.repl.co/djmbon.mp3');audio.play();}         
+
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                backdrop: 'rgba(0,0,0,0.4)', allowOutsideClick: false,
+            });
+            async function mulai(){                 
+                 var { value: nama } = await swals.fire({
+                    title: 'Nama kamu?',
+                    input: 'text',
+                    confirmButtonText: 'Lanjut',
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                });                           
+                if(nama && nama.length < 8){window.nama = nama;kuis();play();} else {
+                    await swals.fire('Ups!', 'Nama gak boleh kosong atau lebih dari 7 karakter, ya!');
+                    mulai();
+                }                                 
+            }
+            async function kuis(){
+            	var { isConfirmed: sayang } = await swals.fire({
+                        title: `` + nama + ` sayang gak sama Aku?`,
+                        text: 'Jawab yang jujur, ya!',
+                        confirmButtonText: 'Sayang Banget',
+                        cancelButtonText: 'Nggak',
+                        showCancelButton: true,
+                    });
+                    if(sayang){
+                        var { value: persen } = await swals.fire({
+                            title: 'Seberapa sayang?',
+                            input: 'range',
+                            inputLabel: 'Antara 80-100% ya',
+                            inputAttributes: {
+                                min: 80,
+                                max: 100,
+                            },
+                            inputValue: 90
+                        });
+                        if(persen){
+                        	window.persen = persen;
+                            await swals.fire(`Maacii udah sayang sama Aku ` + persen + '%');
+                            var { isConfirmed: kangen } = await swals.fire({
+                                title: `Terus ` + nama + ` kangen ga sama Aku?`,
+                                confirmButtonText: 'Kangen',
+                                cancelButtonText: 'Gak!',
+                                showCancelButton: true,
+                            });
+                            if(kangen){
+                            	window.kangen = kangen;
+                                await swals.fire(`Awwhh, Aku juga kangen ` + nama + ' :*');
+                                await swals.fire('Thx uu!', 'Udah meluangkan waktunya!');
+                                text = "AwKarin makan batu, I can't stop thinking about you.                 ";
+                                ketik();expl();showbblur();
+                                } else {
+                                //gak kangen
+                                await swals.fire('Aarrgghhh', 'Yaudah deh gkppa :v');
+                                text = "Biarpun " + nama + " gak kangen, Aku tetap...         ";
+                                ketik();expl();showbblur();
+                            }
+                        }
+                    } else {
+                        //gak sayang
+                        await swals.fire('Yahh. Sedih :(');
+                        await swals.fire('Yaudah deh');
+                        await swals.fire('Semoga harimu indah &#10084;&#65039;');
+                        text = "Biarpun " + nama + " gak sayang, Aku tetap...         ";
+                        ketik();expl();showbblur();
+                    }
+                  }            
+            mulai();          
+</script>
+</body>
+</html>

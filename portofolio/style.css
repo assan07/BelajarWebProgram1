@@ -1,0 +1,59 @@
+/* Resetting some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color: white;
+}
+
+/* Styling the header */
+header {
+    background-color: #393a39;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling the navigation menu */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styling sections */
+section {
+    padding: 20px;
+}
+
+/* Styling the project items */
+.project {
+    margin: 20px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 30%;
+    height: 50;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
