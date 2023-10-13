@@ -1,0 +1,92 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link href="https://feeldreams.github.io/lahgw/style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  
+<head>
+<title>Script HTML</title>
+<!-- 
+  
+  Made with love by Rayys!
+  
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+     
+  Thanks to all <3
+  
+-->
+</head>
+<body>
+	
+   <!-- Ganti Audio di sini --><audio src="https://feeldreams.github.io/lahgw/lahgw.mp3" id="linkmp3"></audio><script>audio = new Audio('' + linkmp3.src);</script>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/lahgw/wphdr.jpg" id="wallpaper"/><div id="beneranblur"></div>
+   </div>
+
+   <div id='Content'>
+   	
+     <div id="suratin" onClick="memulai();">
+       <!-- Tombol Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+     </div>
+     <p id="ket">Klik Pesannya!</p>
+   
+     <div>
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/tinju.gif" id="fotoakhir"/>
+         <img src="https://feeldreams.github.io/pandateriak.gif" id="fotoakhir1"/>
+         <img src="https://feeldreams.github.io/weee.gif" id="fotoakhir2"/>
+
+         <img src="https://feeldreams.github.io/emawh.gif" id="fotoAkhir"/>
+     </div>
+     <div><blockquote id='bq'>
+  
+       <!-- Konten Penerapan -->
+       <p id="kalimat">Lah Gw Sekolah Mah Buat Cari Ilmu..</p>
+       <p id="kalimata">Ya Bonusnya Ketemu Kamu.. </p>
+       <p id="kalimatb">Ugghh... Meledak!! </p>
+
+       <!-- Konten Pertanyaan -->
+       <p id="kalimat2">Iyaa Ga Sih? </p>
+
+       <!-- Konten Jawaban -->
+       <p id="kalimat3">Jawabanmu: </p>
+       <p id="kalimatb3">Kirim jawabannya ke WhatsApp aku yaa~</p>
+     </blockquote></div>
+   
+     <!-- Tombol Multifungsi -->
+     <div id="Tombol">
+       <a id="By" onClick="multifungsi()">
+         <b id="tmbl">Lanjut</b>
+         <b id="tmbl2"> Balas</b>
+       </a>
+     </div>
+     
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 100,});ftom=0;jikakuis=0;ftganti=0;flag=1;flagg=1;fungsi=0;const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+  
+  function mulaikonten() {
+                          fmulaikonten();audio.play();ftganti=0;ftmuncul();
+                          setTimeout(fmulaiketik1,400);setTimeout(mulaiketik1,400);
+                          setTimeout(fmulaiketik1b,2200);setTimeout(mulaiketik1b,2200);
+                          setTimeout(fmulaiketik2,3600);setTimeout(mulaiketik2,3600);
+                         }
+  
+  function ftmuncul(){
+    if(ftganti==0){fotoakhir.style="display:inline-flex;transition:all .7s ease;opacity:1;transform:scale(1)";}
+    if(ftganti==1){fotoakhir.src = fotoakhir1.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==2){fotoakhir.src = fotoakhir2.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==3){fotoakhir.src = fotoAkhir.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+  }
+</script>
+<script src="https://feeldreams.github.io/lahgw/script.js"></script>
+<!-- Sampai Sini -->
+</body>
+</html>
